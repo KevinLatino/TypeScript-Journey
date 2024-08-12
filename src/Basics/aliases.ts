@@ -12,6 +12,6 @@
         }
     }
 
-    typeOfParam("1212bncbjcwe-dwjcnwjcw-cwecjkwnec", 40)
+    typeOfParam("20kl05jm12", 40)
     
 })();
