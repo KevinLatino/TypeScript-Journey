@@ -12,6 +12,6 @@
         }
     }
 
-    typeOfParam("20kl05jm12", 40)
+    typeOfParam("20kl05jm12", 40);
     
 })();

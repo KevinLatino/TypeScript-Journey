@@ -6,5 +6,5 @@
     numbers = numbers.map(number => number * 2)
 
     console.log(numbers);
-    
+
 })();
