@@ -2,12 +2,9 @@
 
     const randomNumber: number = Math.random();
 
-    console.log(randomNumber);
+    let checkRandomNumber: boolean;
 
-    let checkNumber: boolean;
-
-    checkNumber = randomNumber < 0.5 ? true : false;
+    checkRandomNumber = randomNumber > 6 ? true : false
     
-    console.log("checkNumber", checkNumber);
 
 })();
