@@ -1,5 +1,7 @@
 (() => {
 
+    //It is commonly used for replacing the "any" type
+
     let fruit: unknown = 14;
 
     if (typeof fruit === "string"){
