@@ -1,8 +1,7 @@
 (() => {
-
     enum Roles {
-        Professor = "professor",
-        student = "student"
+        Professor,
+        student
     }
 
     type User = {
@@ -12,10 +11,22 @@
 
     const persona: User = {
         userName: "Kevin",
-        Rol: Roles.student
+        Rol: 0
     }
 
     console.log(persona);
+
+    enum State {
+        Active = "Active",
+        Inactive = "Inactive"
+    }
+
+    const pedido = {
+        name: "Kevin Latino",
+        state: State.Active
+    }
+
+    console.log(pedido);
 })()
 
 
