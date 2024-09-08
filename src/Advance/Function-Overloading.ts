@@ -14,7 +14,7 @@
     }
 
     const rtaArray = parseStr('Kevin');
-    rtaArray.reverse();
+    rtaArray.toString();
 
     console.log(rtaArray);
     
