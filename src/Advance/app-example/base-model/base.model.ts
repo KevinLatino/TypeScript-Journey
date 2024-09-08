@@ -1,4 +1,6 @@
 export default interface BaseModel {
-    id: string,
-    title: string
+    id: number | string,
+    title: string,
+    createdAt: Date,
+    updatedAt: Date
 }

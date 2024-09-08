@@ -1,14 +1,27 @@
-import addProduct from "./products/product.services";
+import { addProduct, updateProduct, arrayProducts } from "./products/product.services";
+import { ProductModel } from "./products/product.model";
+import { faker } from "@faker-js/faker";
 
-const addJacket = addProduct({
-    id: "ddwddwdewd.wedwed2e12e1e.qe12312e1e",
-    title: "Jacket",
-    size: "M",
-    price: 100,
-    category: {
-        id: 12,
-        category: "C1"
-    }
-})
+for (let index = 0; index < 5; index++) {
+    addProduct({
+        id: faker.number.int(),
+        title: faker.commerce.product(),
+        size: faker.helpers.arrayElement(["S", "M", "L", "XL", "XXL"]),
+        price: faker.commerce.price(),
+        updatedAt: faker.date.soon(),
+        createdAt: faker.date.soon(),
+        category: {
+            id: faker.number.int(),
+            category: faker.helpers.arrayElement(["C1", "C2", "C3"])
+        }
+    })
+}
 
-console.log(addJacket);
+console.log(arrayProducts);
+
+const product1 = arrayProducts[0];
+
+
+console.log(updateProduct(product1.id, {
+    title: "New product",
+}));
