@@ -8,7 +8,9 @@ export const addProduct = (productBody: ProductModel) => {
     return arrayProducts
 }
 
-export const updateProduct = (id: number | string, productUpdated: UpdateProductDto) => {
+
+//                                here we have the type of "id" (string | number)
+export const updateProduct = (id: ProductModel['id'], productUpdated: UpdateProductDto) => {
     const index = arrayProducts.findIndex(item => item.id === id)
     const prevData = arrayProducts[index];
     arrayProducts[index] = {
