@@ -1,7 +1,7 @@
 import addProduct from "./products/product.services";
 
 const addJacket = addProduct({
-    id: 1,
+    id: "ddwddwdewd.wedwed2e12e1e.qe12312e1e",
     title: "Jacket",
     size: "M",
     price: 100,
