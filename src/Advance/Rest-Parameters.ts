@@ -12,6 +12,6 @@
         return false
     }
 
-    console.log(checkRol(Roles.client));
+    console.log(checkRol(Roles.Admin));
     
 })();
