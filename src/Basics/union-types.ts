@@ -1,6 +1,7 @@
 (() => {
     //Example of union type
     let userId: number | string;
+    
     userId = 3000
     userId = "1j2h34cd3no2l3cdje3r48csd-dw9efwcn2-3diqdjqwed23";
     console.log(userId);
