@@ -1,6 +1,6 @@
 (() => {
 
-    enum Roles  {
+    enum Roles {
         Admin = "Admin",
         client = "client"
     }
