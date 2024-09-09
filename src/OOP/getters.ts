@@ -1,7 +1,7 @@
 class Dates {
     constructor(
         private _day: number = 10,
-        public mounth: number = 10,
+        public month: number = 10,
         private year: number = 10
     ) { }
 
